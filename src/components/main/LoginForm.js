@@ -3,22 +3,17 @@ import React from "react";
 
 function LoginForm() {
     return (
-        <div className="component">
-            <form>
-                <div className="row mb-3">
-                    <label for="inputEmail3" className="col-sm-2 col-form-label">Email</label>
-                    <div className="col-sm-10">
-                        <input type="email" className="form-control" id="inputEmail3" />
-                    </div>
+        <div className="login-div">
+            <form >
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                    <label for="floatingInput">Email address</label>
                 </div>
-                <div className="row mb-3">
-                    <label for="inputPassword3" className="col-sm-2 col-form-label">Password</label>
-                    <div className="col-sm-10">
-                        <input type="password" className="form-control" id="inputPassword3" />
-                    </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+                    <label for="floatingPassword">Password</label>
                 </div>
                 <fieldset className="row mb-3">
-                    <legend className="col-form-label col-sm-2 pt-0">Radios</legend>
                     <div className="col-sm-10">
                         <div className="form-check">
                             <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked />

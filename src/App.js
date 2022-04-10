@@ -1,4 +1,4 @@
-import LoginForm from './components/LoginForm.js';
+import LoginForm from './components/main/LoginForm.js';
 import './App.css';
 import Header from './components/layout/Header.js';
 
