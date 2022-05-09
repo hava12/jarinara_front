@@ -3,14 +3,13 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Button from '@mui/material/Button';
 import React from 'react'
 import routes from "./routes";
+import Todo from './components/Todo'
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Button>Primary</Button>
-        <Button disabled>Disabled</Button>
-        <Button href="#text-buttons">Link</Button>
+        <Todo />
         <div className="container">
             <Routes>
                 <>
