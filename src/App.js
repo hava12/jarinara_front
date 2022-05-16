@@ -1,7 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React from 'react'
-import routes from "./routes";
 import Todo from './components/Todo'
 import AddTodo from './components/AddTodo'
 import { Paper, List, Container } from '@mui/material';
@@ -47,23 +45,14 @@ class App extends React.Component {
     );
     
     return (
-      <Router>
-        <div className="App">
-          <Container maxWidth="md">
-              <AddTodo add={this.add}/>
-              <div className="TodoList">{todoItems}</div>
-          </Container>
-          <div className="container">
-              <Routes>
-                  <>
-                      {routes.map((route) => {
-                            return <Route path={route.path} key={route.path} element={<route.component />} exact></Route>;
-                      })}
-                  </>
-              </Routes>
-          </div>
+      <div className="App">
+        <Container maxWidth="md">
+            <AddTodo add={this.add}/>
+            <div className="TodoList">{todoItems}</div>
+        </Container>
+        <div className="container">
         </div>
-      </Router>
+      </div>
     );
   }
 }
